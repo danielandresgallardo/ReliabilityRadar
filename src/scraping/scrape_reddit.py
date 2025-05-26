@@ -99,43 +99,44 @@ def save_to_json(data, filename, folder_name="scraped_data"):
     print(f"Data saved to: {filepath}")
 
 if __name__ == "__main__":
-    # subreddit_name = "cars"
+    folder_name = "data/reddit_data"
+    subreddit_name = "cars"
     # posts = scrape_subreddit(subreddit_name, limit=1000, max_comment_depth=1)
 
-    # save_to_json(posts, f'reddit_{subreddit_name}_posts_with_comments.json', folder_name="reddit_data")
+    # save_to_json(posts, f'reddit_{subreddit_name}_posts_with_comments.json', folder_name)
     # print(f'Saved {len(posts)} posts with comments from r/{subreddit_name}')
 
 
     # subreddit_name = "askcarsales"
     # posts = scrape_subreddit(subreddit_name, limit=1000, max_comment_depth=1)
 
-    # save_to_json(posts, f'reddit_{subreddit_name}_posts_with_comments.json', folder_name="reddit_data")
+    # save_to_json(posts, f'reddit_{subreddit_name}_posts_with_comments.json', folder_name)
     # print(f'Saved {len(posts)} posts with comments from r/{subreddit_name}')
 
 
     # subreddit_name = "mechanicadvice"
     # posts = scrape_subreddit(subreddit_name, limit=1000, max_comment_depth=1)
 
-    # save_to_json(posts, f'reddit_{subreddit_name}_posts_with_comments.json', folder_name="reddit_data")
+    # save_to_json(posts, f'reddit_{subreddit_name}_posts_with_comments.json', folder_name)
     # print(f'Saved {len(posts)} posts with comments from r/{subreddit_name}')
 
 
     # subreddit_name = "usedcars"
     # posts = scrape_subreddit(subreddit_name, limit=1000, max_comment_depth=1)
 
-    # save_to_json(posts, f'reddit_{subreddit_name}_posts_with_comments.json', folder_name="reddit_data")
+    # save_to_json(posts, f'reddit_{subreddit_name}_posts_with_comments.json', folder_name)
     # print(f'Saved {len(posts)} posts with comments from r/{subreddit_name}')
 
 
     # subreddit_name = "CarTalk"
     # posts = scrape_subreddit(subreddit_name, limit=1000, max_comment_depth=1)
 
-    # save_to_json(posts, f'reddit_{subreddit_name}_posts_with_comments.json', folder_name="reddit_data")
+    # save_to_json(posts, f'reddit_{subreddit_name}_posts_with_comments.json', folder_name)
     # print(f'Saved {len(posts)} posts with comments from r/{subreddit_name}')
 
 
     # subreddit_name = "CarQuestions"
     # posts = scrape_subreddit(subreddit_name, limit=1000, max_comment_depth=1)
 
-    # save_to_json(posts, f'reddit_{subreddit_name}_posts_with_comments.json', folder_name="reddit_data")
+    # save_to_json(posts, f'reddit_{subreddit_name}_posts_with_comments.json', folder_name)
     # print(f'Saved {len(posts)} posts with comments from r/{subreddit_name}')
