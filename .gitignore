@@ -1,1 +1,4 @@
 .env
+src/utils/punkt_test.py
+.gitignore
+src/nlp/preprocess/fine_tuned_bert_test.py

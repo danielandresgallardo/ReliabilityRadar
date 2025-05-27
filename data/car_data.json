@@ -702,7 +702,6 @@
       "Tun",
       "V3",
       "V5",
-      "V6",
       "V7",
       "Zhonghua",
       "Zunchi"
@@ -1209,7 +1208,6 @@
       "Bluebird",
       "Cherry",
       "Fairlady",
-      "GO",
       "GO+",
       "Laurel",
       "Redi-GO",
@@ -1606,7 +1604,6 @@
       "Hover",
       "Pegasus",
       "Peri",
-      "Safe",
       "Sailor",
       "Sing",
       "Socool",
@@ -1759,7 +1756,6 @@
       "80",
       "90",
       "Armoured Car",
-      "FWD",
       "Hawk",
       "Hornet",
       "Imperial",
@@ -1808,7 +1804,6 @@
       "G",
       "I",
       "J",
-      "M",
       "Q30",
       "Q40",
       "Q45",
@@ -1867,7 +1862,6 @@
       "VehiCROSS"
     ],
     "Iveco": [
-      "Daily",
       "Eurocargo",
       "EuroStar",
       "EuroTech",
