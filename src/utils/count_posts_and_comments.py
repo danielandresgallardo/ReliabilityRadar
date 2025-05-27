@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 RAW_DATA_DIR = Path("data/raw_data")
-PREPROCESSED_DIR = Path("data/preprocessed_data")
+PREPROCESSED_DIR = Path("data/old_preprocessed_data")
 
 def count_posts_and_comments(file_path):
     with open(file_path, "r", encoding="utf-8") as f:
