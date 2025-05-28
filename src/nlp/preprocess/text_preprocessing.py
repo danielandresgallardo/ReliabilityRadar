@@ -137,9 +137,6 @@ def preprocess_sentences(text: str):
             cleaned_sentences_tokens.append(tokens)
             entities = find_car_entities(sentence)
             ner_entities_per_sentence.append(entities)
-        else:
-            # Maintain alignment between cleaned tokens and NER outputs
-            ner_entities_per_sentence.append([])
 
     return {
         "cleaned_sentences_tokens": cleaned_sentences_tokens,

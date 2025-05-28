@@ -21,6 +21,7 @@ def flatten_reddit_comments(comments):
             flat_comments.append({
                 "id": comment.get("id", ""),
                 "body": body,
+                "created_utc": comment.get("created_utc", None),
                 "preprocessed_body": preprocess_sentences(body)
             })
             replies = comment.get("replies", [])
@@ -40,6 +41,7 @@ def preprocess_reddit_thread(thread):
         processed_comments.append({
             "id": comment["id"],
             "body": comment["body"],
+            "created_utc": comment.get("created_utc", None),
             "preprocessed_body": {
                 "cleaned_sentences_tokens": preprocessed["cleaned_sentences_tokens"],
                 "ner_entities": preprocessed["ner_entities"]
@@ -53,6 +55,7 @@ def preprocess_reddit_thread(thread):
         "id": thread.get("id", ""),
         "title": title,
         "selftext": selftext,
+        "created_utc": thread.get("created_utc", None),
         "comments": processed_comments,
         "preprocessed_title": {
             "cleaned_sentences_tokens": title_processed["cleaned_sentences_tokens"],
@@ -77,6 +80,7 @@ def preprocess_cartalk_thread(thread):
         processed_comments.append({
             "id": comment.get("id", ""),
             "body": body,
+            "created_utc": comment.get("created_utc", None),
             "preprocessed_body": {
                 "cleaned_sentences_tokens": preprocessed["cleaned_sentences_tokens"],
                 "ner_entities": preprocessed["ner_entities"]
@@ -90,6 +94,7 @@ def preprocess_cartalk_thread(thread):
         "id": thread.get("id", ""),
         "title": title,
         "selftext": selftext,
+        "created_utc": thread.get("created_utc", None),
         "comments": processed_comments,
         "preprocessed_title": {
             "cleaned_sentences_tokens": title_processed["cleaned_sentences_tokens"],
