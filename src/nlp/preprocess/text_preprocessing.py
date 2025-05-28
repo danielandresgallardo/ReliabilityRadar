@@ -44,6 +44,7 @@ AMBIGUOUS_TOKENS = {
 
 ALWAYS_EXCLUDE = {"i", "is"}
 
+# Text cleanup
 def clean_text(text: str) -> str:
     # Lowercase the text
     text = text.lower()
@@ -63,6 +64,7 @@ def clean_text(text: str) -> str:
 
     return text
 
+# Checks if an ambiguous token appears in a car-related context within the sentence.
 def is_valid_car_context(token: str, sentence: str, entity_group: str) -> bool:
     if token in AMBIGUOUS_TOKENS:
         window_size = 3
@@ -82,6 +84,7 @@ def is_valid_car_context(token: str, sentence: str, entity_group: str) -> bool:
         return False
     return True
 
+# Corrects entity group to CAR_BRAND or CAR_MODEL if word matches known brands/models.
 def fix_entity_group(ent, word: str) -> str:
     word_lower = word.lower()
     if word_lower in brand_names:
@@ -90,6 +93,7 @@ def fix_entity_group(ent, word: str) -> str:
         return "CAR_MODEL"
     return ent.get("entity_group", "")
 
+# Extracts and filters car-related entities from text using NER and dictionary matching.
 def find_car_entities(text: str):
     bert_entities = ner_pipeline(text)
     tokens = word_tokenize(text)
@@ -130,6 +134,7 @@ def find_car_entities(text: str):
 
     return filtered_entities
 
+# Tokenizes, cleans, lemmatizes sentences and extracts named car entities per sentence.
 def preprocess_sentences(text: str):
     sentences = sent_tokenize(text)
     cleaned_sentences_tokens = []
