@@ -98,6 +98,6 @@ if issue_counter:
     plt.savefig(out_img)
     plt.show()
 
-    print(f"✅ Saved analysis to {out_json}\n📊 Chart saved to {out_img}")
+    print(f"Saved analysis to {out_json}\n📊 Chart saved to {out_img}")
 else:
-    print(f"⚠️ No issues found for brand '{brand}' and model '{model}'")
+    print(f"No issues found for brand '{brand}' and model '{model}'")
