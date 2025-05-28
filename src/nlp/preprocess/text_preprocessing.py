@@ -42,16 +42,22 @@ AMBIGUOUS_TOKENS = {
     "a", "an", "to", "of", "in", "so", "we", "he", "she", "us"
 }
 
-# Add these definitely invalid tokens you want to always exclude (even if context looks good)
 ALWAYS_EXCLUDE = {"i", "is"}
 
 def clean_text(text: str) -> str:
     text = text.lower()
+    # Remove standalone numbers (1 to 3 digits) that aren't part of words or hyphenated expressions
     text = re.sub(r'(?<![\w-])\b\d{1,3}\b(?![\w-])', '', text)
+    # Replace em-dashes or dashes surrounded by spaces with a single space
     text = re.sub(r'\s*—\s*', ' ', text)
+    # Remove apostrophes and typographic apostrophes
     text = text.replace("'", "").replace("’", "")
+    # Remove punctuation (except hyphens) by replacing them with spaces
+    # string.punctuation includes !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
     text = re.sub(rf"[{re.escape(string.punctuation.replace('-', ''))}]", " ", text)
+    # Replace isolated hyphens (not between words or numbers) with space
     text = re.sub(r'(?<!\w)-(?!\w)', ' ', text)
+    # Normalize multiple spaces into one and trim leading/trailing whitespace
     text = re.sub(r'\s+', ' ', text).strip()
     return text
 
