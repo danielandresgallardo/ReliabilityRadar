@@ -55,6 +55,9 @@ records = [
 ]
 df = pd.DataFrame(records)
 
+# Filter months to only include 2024 and later
+df = df[df["month"] >= "2024-11"]
+
 # Pivot to get monthly time series for top brands
 top_brands = df.groupby("brand")["count"].sum().nlargest(5).index
 df = df[df["brand"].isin(top_brands)]
