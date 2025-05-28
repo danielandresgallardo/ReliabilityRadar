@@ -1,0 +1,72 @@
+{
+  "horch": {
+    "negative": 0,
+    "neutral": 0,
+    "positive": 1,
+    "total": 1,
+    "positive_ratio": 1.0
+  },
+  "birdie": {
+    "negative": 0,
+    "neutral": 0,
+    "positive": 1,
+    "total": 1,
+    "positive_ratio": 1.0
+  },
+  "invicta": {
+    "negative": 0,
+    "neutral": 0,
+    "positive": 1,
+    "total": 1,
+    "positive_ratio": 1.0
+  },
+  "alpina": {
+    "negative": 1,
+    "neutral": 0,
+    "positive": 6,
+    "total": 7,
+    "positive_ratio": 0.8571428571428571
+  },
+  "austin": {
+    "negative": 0,
+    "neutral": 5,
+    "positive": 8,
+    "total": 13,
+    "positive_ratio": 0.6153846153846154
+  },
+  "daimler": {
+    "negative": 0,
+    "neutral": 1,
+    "positive": 1,
+    "total": 2,
+    "positive_ratio": 0.5
+  },
+  "ligier": {
+    "negative": 0,
+    "neutral": 1,
+    "positive": 1,
+    "total": 2,
+    "positive_ratio": 0.5
+  },
+  "de tomaso": {
+    "negative": 0,
+    "neutral": 2,
+    "positive": 2,
+    "total": 4,
+    "positive_ratio": 0.5
+  },
+  "koenigsegg": {
+    "negative": 1,
+    "neutral": 2,
+    "positive": 3,
+    "total": 6,
+    "positive_ratio": 0.5
+  },
+  "ariel": {
+    "negative": 1,
+    "neutral": 5,
+    "positive": 6,
+    "total": 12,
+    "positive_ratio": 0.5
+  }
+}

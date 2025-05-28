@@ -1,0 +1,72 @@
+{
+  "autobianchi": {
+    "negative": 1,
+    "neutral": 0,
+    "positive": 0,
+    "total": 1,
+    "negative_ratio": 1.0
+  },
+  "jac": {
+    "negative": 1,
+    "neutral": 0,
+    "positive": 0,
+    "total": 1,
+    "negative_ratio": 1.0
+  },
+  "kia": {
+    "negative": 499,
+    "neutral": 17,
+    "positive": 52,
+    "total": 568,
+    "negative_ratio": 0.8785211267605634
+  },
+  "daihatsu": {
+    "negative": 3,
+    "neutral": 4,
+    "positive": 2,
+    "total": 9,
+    "negative_ratio": 0.3333333333333333
+  },
+  "ac": {
+    "negative": 138,
+    "neutral": 231,
+    "positive": 162,
+    "total": 531,
+    "negative_ratio": 0.2598870056497175
+  },
+  "iso": {
+    "negative": 1,
+    "neutral": 2,
+    "positive": 1,
+    "total": 4,
+    "negative_ratio": 0.25
+  },
+  "lada": {
+    "negative": 1,
+    "neutral": 2,
+    "positive": 1,
+    "total": 4,
+    "negative_ratio": 0.25
+  },
+  "hyundai": {
+    "negative": 164,
+    "neutral": 310,
+    "positive": 201,
+    "total": 675,
+    "negative_ratio": 0.24296296296296296
+  },
+  "daewoo": {
+    "negative": 3,
+    "neutral": 6,
+    "positive": 4,
+    "total": 13,
+    "negative_ratio": 0.23076923076923078
+  },
+  "byd": {
+    "negative": 9,
+    "neutral": 19,
+    "positive": 13,
+    "total": 41,
+    "negative_ratio": 0.21951219512195122
+  }
+}
