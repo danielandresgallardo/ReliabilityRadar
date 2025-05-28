@@ -2261,6 +2261,107 @@
       "08",
       "09"
     ],
+    "Nissan": [
+      "Altima",
+      "Maxima",
+      "Sentra",
+      "Versa",
+      "Leaf",
+      "GT-R",
+      "370Z",
+      "350Z",
+      "Rogue",
+      "Murano",
+      "Pathfinder",
+      "Armada",
+      "Frontier",
+      "Titan",
+      "Juke",
+      "Kicks",
+      "Xterra",
+      "Quest",
+      "Cube",
+      "Pulsar",
+      "NV200",
+      "Ariya",
+      "Z"
+    ],
+    "Mazda": [
+      "Mazda3",
+      "Mazda6",
+      "CX-3",
+      "CX-30",
+      "CX-5",
+      "CX-9",
+      "MX-5",
+      "Miata",
+      "RX-7",
+      "RX-8",
+      "Tribute",
+      "Protege",
+      "B-Series",
+      "626",
+      "MPV",
+      "CX-7",
+      "CX-50"
+    ],
+    "Mitsubishi": [
+      "Outlander",
+      "Eclipse Cross",
+      "ASX",
+      "Lancer",
+      "Pajero",
+      "Mirage"
+    ],
+    "Mini": [
+      "Cooper",
+      "Countryman",
+      "Clubman",
+      "John Cooper Works"
+    ],
+    "Peugeot": [
+      "208",
+      "308",
+      "3008",
+      "508",
+      "2008",
+      "5008"
+    ],
+    "Renault": [
+      "Clio",
+      "Megane",
+      "Captur",
+      "Kadjar",
+      "Talisman",
+      "Zoe",
+      "Duster"
+    ],
+    "Subaru": [
+      "Impreza",
+      "Outback",
+      "Forester",
+      "Crosstrek",
+      "Legacy",
+      "WRX",
+      "BRZ"
+    ],
+    "Skoda": [
+      "Octavia",
+      "Superb",
+      "Fabia",
+      "Kodiaq",
+      "Karoq",
+      "Scala"
+    ],
+    "Tesla": [
+      "Model S",
+      "Model 3",
+      "Model X",
+      "Model Y",
+      "Roadster",
+      "Cybertruck",
+      "Semi"
+    ],
     "Toyota": [
       "Camry",
       "Corolla",
@@ -2270,6 +2371,28 @@
       "Avalon",
       "Land Cruiser",
       "Supra"
+    ],
+    "Volkswagen": [
+      "Golf",
+      "Passat",
+      "Polo",
+      "Jetta",
+      "Tiguan",
+      "Touareg",
+      "Beetle",
+      "Arteon",
+      "Atlas"
+    ],
+    "Volvo": [
+      "XC40",
+      "XC60",
+      "XC90",
+      "S60",
+      "S90",
+      "V60",
+      "V90",
+      "Polestar 1",
+      "Polestar 2"
     ]
   }
 }
