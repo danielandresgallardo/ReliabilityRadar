@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 # Paths
 DATA_DIR = Path("data/preprocessed_data")
-OUTPUT_DIR = Path("outputs/plots")
+OUTPUT_DIR = Path("data/visualizations")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # Counter for car brands
