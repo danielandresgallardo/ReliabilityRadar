@@ -1,0 +1,72 @@
+{
+  "kia": {
+    "negative": 499,
+    "neutral": 17,
+    "positive": 52,
+    "total": 568,
+    "negative_ratio": 0.8785211267605634
+  },
+  "ac": {
+    "negative": 138,
+    "neutral": 231,
+    "positive": 162,
+    "total": 531,
+    "negative_ratio": 0.2598870056497175
+  },
+  "hyundai": {
+    "negative": 164,
+    "neutral": 310,
+    "positive": 201,
+    "total": 675,
+    "negative_ratio": 0.24296296296296296
+  },
+  "daewoo": {
+    "negative": 3,
+    "neutral": 6,
+    "positive": 4,
+    "total": 13,
+    "negative_ratio": 0.23076923076923078
+  },
+  "byd": {
+    "negative": 9,
+    "neutral": 19,
+    "positive": 13,
+    "total": 41,
+    "negative_ratio": 0.21951219512195122
+  },
+  "fiat": {
+    "negative": 22,
+    "neutral": 51,
+    "positive": 30,
+    "total": 103,
+    "negative_ratio": 0.21359223300970873
+  },
+  "bentley": {
+    "negative": 5,
+    "neutral": 8,
+    "positive": 11,
+    "total": 24,
+    "negative_ratio": 0.20833333333333334
+  },
+  "chrysler": {
+    "negative": 47,
+    "neutral": 117,
+    "positive": 65,
+    "total": 229,
+    "negative_ratio": 0.2052401746724891
+  },
+  "buick": {
+    "negative": 45,
+    "neutral": 142,
+    "positive": 54,
+    "total": 241,
+    "negative_ratio": 0.18672199170124482
+  },
+  "dodge": {
+    "negative": 92,
+    "neutral": 251,
+    "positive": 151,
+    "total": 494,
+    "negative_ratio": 0.1862348178137652
+  }
+}
