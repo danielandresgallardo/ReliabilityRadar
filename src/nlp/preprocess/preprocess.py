@@ -11,6 +11,7 @@ RAW_CARTALK_FILE = Path("data/raw_data/cartalk_general_discussion.json")
 PREPROCESSED_DIR = Path("data/preprocessed_data")
 PREPROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
+# Flatten nested Reddit comments into a flat list.
 def flatten_reddit_comments(comments):
     flat_comments = []
     def recursive_flatten(comments_list):
@@ -30,6 +31,7 @@ def flatten_reddit_comments(comments):
     recursive_flatten(comments)
     return flat_comments
 
+# Preprocess Reddit thread text and comments.
 def preprocess_reddit_thread(thread):
     title = thread.get("title", "")
     selftext = thread.get("selftext", "")
@@ -67,6 +69,7 @@ def preprocess_reddit_thread(thread):
         }
     }
 
+# Preprocess CarTalk thread text and comments.
 def preprocess_cartalk_thread(thread):
     title = thread.get("title", "")
     selftext = thread.get("selftext", "")
@@ -106,6 +109,7 @@ def preprocess_cartalk_thread(thread):
         }
     }
 
+# Convert numpy types to native Python types for JSON serialization.
 def make_json_serializable(obj):
     if isinstance(obj, dict):
         return {k: make_json_serializable(v) for k, v in obj.items()}
@@ -118,11 +122,13 @@ def make_json_serializable(obj):
     else:
         return obj
 
+# Save preprocessed data to JSON file.
 def save_preprocessed(data, output_path):
     serializable_data = make_json_serializable(data)
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(serializable_data, f, ensure_ascii=False, indent=2)
 
+# Preprocess Reddit and CarTalk raw data files and save outputs.
 def main():
     # Process Reddit files
     reddit_files = list(RAW_REDDIT_DIR.glob("reddit_*.json"))
