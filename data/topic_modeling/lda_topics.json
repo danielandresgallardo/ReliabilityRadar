@@ -1,0 +1,74 @@
+{
+  "Topic 1": [
+    "question",
+    "subreddit",
+    "contact",
+    "askcarsales",
+    "concern",
+    "message",
+    "moderator",
+    "compose",
+    "wiki",
+    "flair"
+  ],
+  "Topic 2": [
+    "car",
+    "year",
+    "vehicle",
+    "mile",
+    "time",
+    "post",
+    "used",
+    "make",
+    "im",
+    "buy"
+  ],
+  "Topic 3": [
+    "tire",
+    "car",
+    "thanks",
+    "check",
+    "http",
+    "im",
+    "question",
+    "posting",
+    "damage",
+    "com"
+  ],
+  "Topic 4": [
+    "car",
+    "like",
+    "people",
+    "need",
+    "look",
+    "help",
+    "way",
+    "going",
+    "thing",
+    "new"
+  ],
+  "Topic 5": [
+    "engine",
+    "youre",
+    "car",
+    "time",
+    "oil",
+    "know",
+    "start",
+    "better",
+    "battery",
+    "getting"
+  ],
+  "Topic 6": [
+    "dont",
+    "action",
+    "automatically",
+    "bot",
+    "performed",
+    "comment",
+    "post",
+    "make",
+    "insurance",
+    "sure"
+  ]
+}

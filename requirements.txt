@@ -2,3 +2,4 @@ requests
 beautifulsoup4
 praw
 pandas
+scikit-learn
