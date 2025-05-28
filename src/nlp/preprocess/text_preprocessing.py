@@ -45,20 +45,22 @@ AMBIGUOUS_TOKENS = {
 ALWAYS_EXCLUDE = {"i", "is"}
 
 def clean_text(text: str) -> str:
+    # Lowercase the text
     text = text.lower()
-    # Remove standalone numbers (1 to 3 digits) that aren't part of words or hyphenated expressions
+
+    # Remove standalone 1- to 3-digit numbers (not part of words or hyphenated strings)
     text = re.sub(r'(?<![\w-])\b\d{1,3}\b(?![\w-])', '', text)
-    # Replace em-dashes or dashes surrounded by spaces with a single space
-    text = re.sub(r'\s*—\s*', ' ', text)
-    # Remove apostrophes and typographic apostrophes
-    text = text.replace("'", "").replace("’", "")
-    # Remove punctuation (except hyphens) by replacing them with spaces
-    # string.punctuation includes !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+
+    # Replace em-dashes and isolated hyphens with a space
+    text = re.sub(r'[—–]', ' ', text)                     # Covers em-dash and en-dash
+    text = re.sub(r'(?<!\w)-(?!\w)', ' ', text)           # Remove isolated ASCII hyphens
+
+    # Remove all punctuation (except hyphens between words)
     text = re.sub(rf"[{re.escape(string.punctuation.replace('-', ''))}]", " ", text)
-    # Replace isolated hyphens (not between words or numbers) with space
-    text = re.sub(r'(?<!\w)-(?!\w)', ' ', text)
-    # Normalize multiple spaces into one and trim leading/trailing whitespace
+
+    # Normalize whitespace
     text = re.sub(r'\s+', ' ', text).strip()
+
     return text
 
 def is_valid_car_context(token: str, sentence: str, entity_group: str) -> bool:
