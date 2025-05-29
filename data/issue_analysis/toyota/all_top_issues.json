@@ -1,0 +1,12 @@
+{
+  "noise": 209,
+  "leak": 189,
+  "drain": 98,
+  "fail": 92,
+  "smell": 91,
+  "check engine": 81,
+  "misfire": 59,
+  "burning": 51,
+  "vibration": 26,
+  "rattle": 25
+}
