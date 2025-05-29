@@ -1,7 +1,7 @@
 import os
 import json
 from pathlib import Path
-from collections import defaultdict, Counter
+from collections import Counter
 import matplotlib.pyplot as plt
 
 # === Ask for input ===
@@ -76,14 +76,21 @@ for file in INPUT_DIR.glob("*.json"):
         for post in posts:
             process_post(post)
 
-# === Save issue frequencies ===
+# === Save full issue frequencies ===
 out_json = OUTPUT_DIR / (f"{model if model else 'all'}_issues.json")
 with open(out_json, "w", encoding="utf-8") as f:
     json.dump(issue_counter.most_common(), f, indent=2)
 
-# === Plot ===
+# === Save top 10 issues to JSON (same as plotted) ===
 if issue_counter:
     top_issues = issue_counter.most_common(10)
+    top_issues_json = {issue: count for issue, count in top_issues}
+    
+    top_json_path = OUTPUT_DIR / (f"{model if model else 'all'}_top_issues.json")
+    with open(top_json_path, "w", encoding="utf-8") as f:
+        json.dump(top_issues_json, f, indent=2)
+
+    # Plot top 10 issues
     labels, counts = zip(*top_issues)
 
     plt.figure(figsize=(10, 6))
@@ -98,6 +105,8 @@ if issue_counter:
     plt.savefig(out_img)
     plt.show()
 
-    print(f"Saved analysis to {out_json}\n📊 Chart saved to {out_img}")
+    print(f"Saved full analysis to {out_json}")
+    print(f"Saved top 10 issues to {top_json_path}")
+    print(f"Chart saved to {out_img}")
 else:
     print(f"No issues found for brand '{brand}' and model '{model}'")
